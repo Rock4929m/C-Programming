@@ -1,0 +1,18 @@
+//Write a program in c to calculate the area of triangle using Haron's formula.
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double a, b, c, s, area;
+    printf("Enter the length of side 'a': ");
+    scanf("%lf", &a);
+    printf("Enter the length of side 'b': ");
+    scanf("%lf", &b);
+    printf("Enter the length of side 'c': ");
+    scanf("%lf", &c);
+    s = (a + b + c) / 2;
+    area = sqrt(s * (s - a) * (s - b) * (s - c));
+    printf("Area of the triangle is: %.2lf\n", area);
+
+    return 0;
+}
