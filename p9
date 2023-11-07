@@ -1,0 +1,16 @@
+//Write a program in c to make your own digital storage converter by taking the size in KB and convert it MB,GB and TB
+#include <stdio.h>
+
+int main() {
+    double sizeInKB;
+    printf("Enter size in KB: ");
+    scanf("%lf", &sizeInKB);
+    double sizeInMB = sizeInKB / 1024;
+    double sizeInGB = sizeInMB / 1024;
+    double sizeInTB = sizeInGB / 1024;
+    printf("Size in MB: %.2lf MB\n", sizeInMB);
+    printf("Size in GB: %.2lf GB\n", sizeInGB);
+    printf("Size in TB: %.2lf TB\n", sizeInTB);
+    
+    return 0;
+}
