@@ -1,18 +1,13 @@
-//Write a program to get the discriminant value of a quadratic equation.
+//Write a program to convert the value of temperature from degree celcius to degree fahrenheit.
 #include <stdio.h>
 
 int main() {
-    float a, b, c, discriminant;
-
-    // Input coefficients
-    printf("a: ");
-    scanf("%f", &a);
-    printf("b: ");
-    scanf("%f", &b);
-    printf("c: ");
-    scanf("%f", &c);
-    discriminant = b * b - 4 * a * c;
-    printf("Discriminant value is: %.2f\n", discriminant);
+    float celsius, fahrenheit;
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+    fahrenheit = (celsius * 9/5) + 32;
+    printf("Temperature in Fahrenheit: %.2f\n", fahrenheit);
 
     return 0;
 }
+
