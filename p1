@@ -1,0 +1,13 @@
+//Write a program in c to change the value of a variable by taking an input from the user.
+#include <stdio.h>
+
+int main() {
+    int number;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+    printf("%d\n", number);
+    number = number + 1;
+    printf("%d\n", number);
+    
+    return 0;
+}
